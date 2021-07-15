@@ -1,0 +1,258 @@
+/*Основной цвет текста color: #757575;  */
+/* Цвет текста #212121 */
+/* Фон навигации, заголовок, карточки, адрес #FFFFFF */
+/* Инфа футера rgba(255, 255, 255, 0.6); */
+/* Фон секции услуги #E5E5E5 */
+/* Фон секции команда #F5F4FA */
+/* Фон секции кнопка, футер #2F303A */
+/* Акцент #2196F3 */
+/* Серый #EEEEEE */
+
+/* Шрифты Raleway 700 
+Roboto 400 500 700 900
+*/
+:root {
+  --title-color: #212121;
+  --text-color: #757575;
+  --white: #ffffff;
+  --main-white: #e5e5e5;
+  --footer-white: rgba(255, 255, 255, 0.6);
+  --grey-color: #f5f4fa;
+  --brand-color: #2f303a;
+  --accent: #2196f3;
+  --grey: #eeeeee;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--white);
+  color: var(--text-color);
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.conrainer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 1200px;
+  height: 80px;
+}
+
+.logo-header {
+  margin-right: 93px;
+  color: var(--title-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+
+.logo-footer {
+  color: var(--white);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+
+.logo-colored {
+  color: var(--accent);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.info-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.pages-item:not(:last-child),
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.pages {
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.pages:hover,
+.pages:focus {
+  color: var(--accent);
+}
+
+.contacts {
+  color: var(--text-color);
+
+  text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent);
+}
+
+.service {
+  background-color: var(--brand-color);
+
+  text-align: center;
+  width: 1600px;
+  height: 600px;
+}
+.offer {
+  color: var(--white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.advantages {
+  background-color: var(--white);
+}
+
+.advantages-points {
+  color: var(--title-color);
+
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.proposal {
+  background-color: var(--white);
+}
+
+.title {
+  color: var(--title-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--grey-color);
+}
+
+.name {
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.busyness {
+  line-height: 19px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--brand-color);
+}
+
+.address {
+  color: var(--white);
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.info {
+  color: var(--footer-white);
+
+  text-decoration: none;
+  font-style: normal;
+}
+
+.button-filter {
+  background-color: var(--grey);
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.product-card {
+  text-decoration: none;
+}
+.card-name {
+  color: var(--title-color);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.card-text {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 30px;
+}
