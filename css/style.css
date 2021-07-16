@@ -53,6 +53,10 @@ body {
   padding: 0;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -303,10 +307,6 @@ body {
 
 /* ФИЛЬТР ПРЕДЛОЖЕНИЙ */
 
-.card-section {
-  border-top: 1px solid #ececec;
-}
-
 .button-list {
   padding-top: 94px;
   display: flex;
@@ -339,8 +339,24 @@ body {
 
 .card-list {
   margin-top: 56px;
+  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.card-list-item {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+
+.card-list-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.card-list-item:nth-child(7),
+.card-list-item:nth-child(8),
+.card-list-item:nth-child(9) {
+  margin-bottom: 0;
 }
 
 .product-card {
