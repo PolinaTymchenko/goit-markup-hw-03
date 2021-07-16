@@ -53,14 +53,19 @@ body {
   padding: 0;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header-wrapper {
@@ -215,7 +220,6 @@ body {
 /* УСЛУГИ */
 
 .proposal {
-  margin-top: 94px;
   background-color: var(--white);
 }
 
@@ -223,7 +227,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 .proposal-photo:not(:last-child) {
@@ -245,15 +248,10 @@ body {
   background-color: var(--grey-color);
 }
 
-.team-title {
-  padding-top: 94px;
-}
-
 .team-list {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 .worker:not(:last-child) {
@@ -308,7 +306,6 @@ body {
 /* ФИЛЬТР ПРЕДЛОЖЕНИЙ */
 
 .button-list {
-  padding-top: 94px;
   display: flex;
   justify-content: center;
 }
@@ -339,13 +336,12 @@ body {
 
 .card-list {
   margin-top: 56px;
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .card-list-item {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 
