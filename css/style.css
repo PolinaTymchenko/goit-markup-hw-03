@@ -41,6 +41,10 @@ body {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 /* КОНТЕЙНЕР И СЕКЦИИ СТРАНИЦЫ */
 
 .container {
@@ -58,12 +62,12 @@ body {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  padding: 25px 0;
 }
 
 .header-wrapper {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 /* ЛОГТОТИП */
@@ -84,7 +88,6 @@ body {
   color: var(--white);
 
   display: inline-block;
-  padding-top: 60px;
 
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -123,6 +126,10 @@ body {
   color: var(--accent);
 }
 
+.current {
+  color: var(--accent);
+}
+
 .contacts {
   color: var(--text-color);
 
@@ -141,18 +148,15 @@ body {
 
 /*СЕКЦИЯ С КНОПКОЙ ЗАКАЗА */
 
-.service-section {
+.hero-section {
   background-color: var(--brand-color);
-
-  height: 600px;
-
+  padding: 200px 0;
   text-align: center;
 }
 .page-title {
   color: var(--white);
 
   width: 696px;
-  padding-top: 200px;
   margin: 0 auto 30px;
 
   font-weight: 900;
@@ -167,9 +171,7 @@ body {
   background-color: var(--accent);
   color: var(--white);
 
-  width: 200px;
-  height: 50px;
-
+  padding: 10px 32px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -184,16 +186,22 @@ body {
 .advantages {
   background-color: var(--white);
 
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .hide {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .advantages-list-item {
@@ -249,7 +257,6 @@ body {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -279,10 +286,11 @@ body {
 
 .footer {
   background-color: var(--brand-color);
+
+  padding: 60px 0;
 }
 
 .address-list {
-  padding-bottom: 60px;
   margin-top: 20px;
 }
 
@@ -316,6 +324,8 @@ body {
   background-color: var(--grey);
   color: var(--title-color);
 
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -334,6 +344,8 @@ body {
 .button-filter:focus {
   background-color: var(--accent);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* КАРТОЧКИ */
@@ -346,8 +358,7 @@ body {
 
 .card-list-item {
   margin-bottom: 30px;
-
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .card-list-item:not(:nth-child(3n + 3)) {
@@ -362,7 +373,18 @@ body {
 
 .product-card {
   text-decoration: none;
+  display: block;
 }
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-description {
+  padding: 20px 24px;
+}
+
 .card-name {
   color: var(--title-color);
 
